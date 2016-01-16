@@ -1,8 +1,16 @@
 <html>
     <head>
         <title>Eric Skaggs on GitHub</title>
+        <link rel="stylesheet" href="styles/kendo.common.min.css" />
+        <link rel="stylesheet" href="styles/kendo.default.min.css" />
     </head>
     <body>
         <h1>Hello, World!</h1>
+        <input id="datepicker" />
+        <script>
+            $(function(){
+               $("#datepicker").kendoDatePicker(); 
+            });
+        </script>
     </body>
 </html>
