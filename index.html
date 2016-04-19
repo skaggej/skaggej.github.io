@@ -164,6 +164,26 @@
                 </ul>
             </div>
         </div>        
+        
+            <!-- Begin Orbitera Widget Code -->
+    <script type="text/javascript" charset="utf-8">
+        var is_ssl = ("https:" == document.location.protocol);
+            var setsHost = is_ssl ? "https://orbitera.com/c2m/" : "http://orbitera.com/c2m/";
+            document.write(unescape("%3Cscript src='" + setsHost + "js/widget_over.js?_t="+(new Date).getTime()+"' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript" charset="utf-8">
+        var orbitera_widget_options = {};
+            orbitera_widget_options.display = "embedded";
+            orbitera_widget_options.placement = "hidden"; /* "left","hidden" */
+            orbitera_widget_options.account = "catapult";
+            orbitera_widget_options.page = "testdrives/view/688";
+            orbitera_widget_options.orbiteraURL = setsHost;
+            var orbitera_widget = new OrbiteraWidget.widget(orbitera_widget_options);
+    </script>
+    <!-- End Orbitera Widget Code -->
+        
+        
+        
 </body>
 
 </html>
