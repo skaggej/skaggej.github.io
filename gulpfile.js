@@ -7,12 +7,12 @@ var rename = require('gulp-rename');
 gulp.task('sass', function() {
     gulp.src(['css/src/*.scss','!css/src/sass-variables.scss']) 
         .pipe(sass())
-        .pipe(gulp.dest('css/dist'))
+        .pipe(gulp.dest('css'))
         .pipe(cssnano())
         .pipe(rename({
             extname: ".min.css"
         }))
-        .pipe(gulp.dest('css/dist'));
+        .pipe(gulp.dest('css'));
 });
 
 gulp.task('default', ['sass'], function() {
