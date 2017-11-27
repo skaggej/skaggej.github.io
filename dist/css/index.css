@@ -3,7 +3,12 @@ body {
   color: black;
   font-family: "Consolas"; }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: yellow; }
 
 #bingSearchContainer {
@@ -17,3 +22,11 @@ h1, h2, h3, h4, h5, h6 {
 
 #help {
   color: yellow; }
+
+.box {
+  background-color: black;
+  width: 100px;
+  height: 30px;
+  position: absolute;
+  left: 200px;
+  top: 200px; }

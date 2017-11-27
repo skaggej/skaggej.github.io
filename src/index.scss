@@ -4,18 +4,37 @@ body {
     color: $body-color-main;
     font-family: $body-font-family-main;
 }
-h1, h2, h3, h4, h5, h6{
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: $body-color-header;
 }
+
 #bingSearchContainer {
     padding-top: 15px;
 }
+
 #header {
     text-align: center;
 }
+
 #header a:hover {
     text-decoration: $text-decoration-off;
 }
+
 #help {
     color: $body-color-help;
+}
+
+.box {
+    background-color: black;
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    left: 200px;
+    top: 200px;
 }
