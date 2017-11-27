@@ -1,8 +1,7 @@
-$(document).ready(function(){
+$(document).ready(function () {
     var box = $(".box");
-    var boxCenter = [box.offset().left + box.width() / 2, box.offset().top + box.height() / 2];
     $(document).mousemove(function (e) {
-        var angle = Math.atan2(e.pageX - boxCenter[0], -(e.pageY - boxCenter[1])) * (180 / Math.PI);
+        var angle = e.pageX - e.pageY;
         box.css({
             "-webkit-transform": 'rotate(' + angle + 'deg)'
         });
