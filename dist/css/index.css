@@ -1,5 +1,7 @@
 body {
-  font-family: 'Consolas'; }
+  background-color: #2b2b2b;
+  color: black;
+  font-family: "Consolas"; }
 
 #bingSearchContainer {
   padding-top: 15px; }

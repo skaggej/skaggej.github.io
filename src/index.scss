@@ -1,7 +1,9 @@
 @import 'sass-variables.scss';
 
 body{
-    font-family: 'Consolas';
+    background-color: $body-background-color-main;
+    color: $body-color-main;
+    font-family: $body-font-family-main;
 }
 
 #bingSearchContainer{
@@ -13,5 +15,5 @@ body{
 }
 
 #header a:hover {
-    text-decoration: $text-decoration;
+    text-decoration: $text-decoration-off;
 }
