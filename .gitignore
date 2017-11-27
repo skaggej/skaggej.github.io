@@ -48,3 +48,6 @@ telerik
 kendo*
 
 package-lock.json
+
+### Don't ignore these ###
+!dist/js
