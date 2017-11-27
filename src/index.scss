@@ -1,19 +1,21 @@
 @import 'sass-variables.scss';
-
-body{
+body {
     background-color: $body-background-color-main;
     color: $body-color-main;
     font-family: $body-font-family-main;
 }
-
-#bingSearchContainer{
+h1, h2, h3, h4, h5, h6{
+    color: $body-color-header;
+}
+#bingSearchContainer {
     padding-top: 15px;
 }
-
-#header{
+#header {
     text-align: center;
 }
-
 #header a:hover {
     text-decoration: $text-decoration-off;
+}
+#help {
+    color: $body-color-help;
 }

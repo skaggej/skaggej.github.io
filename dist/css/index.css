@@ -3,6 +3,9 @@ body {
   color: black;
   font-family: "Consolas"; }
 
+h1, h2, h3, h4, h5, h6 {
+  color: yellow; }
+
 #bingSearchContainer {
   padding-top: 15px; }
 
@@ -11,3 +14,6 @@ body {
 
 #header a:hover {
   text-decoration: none; }
+
+#help {
+  color: yellow; }
