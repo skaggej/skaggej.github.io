@@ -46,3 +46,7 @@ js
 ### Telerik ###
 telerik
 kendo*
+
+package-lock.json
+
+.vscode

@@ -1,2 +1,11 @@
+body {
+  font-family: 'Consolas'; }
+
+#bingSearchContainer {
+  padding-top: 15px; }
+
+#header {
+  text-align: center; }
+
 #header a:hover {
   text-decoration: none; }
