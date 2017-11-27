@@ -1,4 +1,4 @@
-var canvas = document.getElementById("bodyContainer");
+var canvas = document.getElementById("canvas");
 var c = canvas.getContext("2d");
 
 var pullStrength = 0.005;
