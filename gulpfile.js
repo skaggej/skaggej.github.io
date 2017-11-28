@@ -1,18 +1,22 @@
 // Sass configuration
-var gulp = require('gulp');
-var sass = require('gulp-sass');
 var cssnano = require('gulp-cssnano');
+var del = require('del');
+var gulp = require('gulp');
 var rename = require('gulp-rename');
+var sass = require('gulp-sass');
 
-gulp.task('sass', function () {
-    gulp.src(['src/*.scss', '!src/sass-variables.scss'])
+gulp.task('sass', function() {
+    gulp.src(['src/*.scss','!src/sass-variables.scss']) 
         .pipe(sass())
-        .pipe(cssnano())
         .pipe(gulp.dest('dist/css'))
+        .pipe(cssnano())
         .pipe(rename({
             extname: ".min.css"
         }))
         .pipe(gulp.dest('dist/css'));
+    return del([
+        'dist/css/index.css'
+    ])
 });
 
 gulp.task('default', ['sass'], function () {

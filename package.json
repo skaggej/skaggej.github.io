@@ -8,6 +8,7 @@
     "jquery": "^3.2.1"
   },
   "devDependencies": {
+    "del": "^3.0.0",
     "gulp": "^3.9.1",
     "gulp-clean-css": "^3.9.0",
     "gulp-cssnano": "^2.1.2",
