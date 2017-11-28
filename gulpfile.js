@@ -5,6 +5,12 @@ var gulp = require('gulp');
 var rename = require('gulp-rename');
 var sass = require('gulp-sass');
 
+gulp.task('clean',function(){
+    return del([
+        'dist/css/index.css'
+    ])
+})
+
 gulp.task('sass', function() {
     gulp.src(['src/*.scss','!src/sass-variables.scss']) 
         .pipe(sass())
@@ -13,13 +19,10 @@ gulp.task('sass', function() {
         .pipe(rename({
             extname: ".min.css"
         }))
-        .pipe(gulp.dest('dist/css'));
-    return del([
-        'dist/css/index.css'
-    ])
+        .pipe(gulp.dest('dist/css'))
 });
 
-gulp.task('default', ['sass'], function () {
+gulp.task('default', ['sass','clean'], function () {
     gulp.src([
             'node_modules/bootstrap/dist/css/bootstrap.min.css',
             'node_modules/font-awesome/css/font-awesome.min.css'
@@ -32,5 +35,5 @@ gulp.task('default', ['sass'], function () {
         .pipe(gulp.dest('dist/js'));
     gulp.src(['node_modules/font-awesome/fonts/*'])
         .pipe(gulp.dest('dist/fonts'));
-    gulp.watch('src/*.scss', ['sass']);
+    gulp.watch('src/*.scss', ['sass','clean']);
 });
