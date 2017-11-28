@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 
 <head>
+    <meta charset="utf-8" />
     <link rel="stylesheet" href="dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="dist/css/font-awesome.min.css">
+    <link rel="stylesheet" href="dist/css/jPicker-1.1.6.min.css">
     <link rel="stylesheet" href="dist/css/index.min.css">
     <script src="dist/js/jquery.min.js"></script>
     <script src="dist/js/bootstrap.min.js"></script>
-    <script src="dist/js/box.js"></script>
+    <script src="dist/js/jpicker-1.1.6.min.js"></script>
+    <script src="dist/js/init.js"></script>
 </head>
 
 <body>
@@ -75,7 +78,7 @@
         </div>
         <div id="mainContent" class="row">
             <div class="col-sm-3">
-                <h5 class="box">Catapult</h5>
+                <h5>Catapult</h5>
                 <ul>
                     <li>
                         <a target="_blank" href="http://blogs.catapultsystems.com/wp-admin">Blog Login</a>
@@ -110,7 +113,7 @@
                         <a target="_blank" href="https://www.yammer.com/catapultsystems.com">Yammer</a>
                     </li>
                 </ul>
-                <h5 class="box">To-do</h5>
+                <h5>To-do</h5>
                 <ul>
                     <li>Azure certs</li>
                     <li>
@@ -120,7 +123,7 @@
                 </ul>
             </div>
             <div class="col-sm-3">
-                <h5 class="box">Personal</h5>
+                <h5>Personal</h5>
                 <ul>
                     <li>
                         <a target="_blank" href="http://feedly.com/i/my">Feedly</a>
@@ -129,7 +132,7 @@
                         <a target="_blank" href="https://meetings.webex.com">WebEx</a>
                     </li>
                 </ul>
-                <h5 class="box">Azure</h5>
+                <h5>Azure</h5>
                 <ul>
                     <li>
                         <a target="_blank" href="https://azure.microsoft.com/en-us/documentation/articles/automation-dsc-overview/?WT.mc_id=azurebg_email_Trans_981_MOSP#what-is-azure-automation-dsc">Automation DSC Overview</a>
@@ -152,7 +155,7 @@
                 </ul>
             </div>
             <div class="col-sm-3">
-                <h5 class="box">Office Dev</h5>
+                <h5>Office Dev</h5>
                 <ul>
                     <li>
                         <a target="_blank" href="http://docs.microsoft.com">docs.microsoft.com</a>
@@ -200,7 +203,7 @@
                         <a target="_blank" href="https://www.nuget.org/profiles/officedevpnp">OfficeDevPnP NuGets</a>
                     </li>
                 </ul>
-                <h5 class="box">#SharePoint</h5>
+                <h5>#SharePoint</h5>
                 <ul>
                     <li>
                         <a target="_blank" href="http://sp2013searchtool.codeplex.com/">SharePoint 2013 Search Query Tool</a>
@@ -220,7 +223,7 @@
                 </ul>
             </div>
             <div class="col-sm-3">
-                <h5 class="box">Dev</h5>
+                <h5>Dev</h5>
                 <ul>
                     <li>
                         <a target="_blank" href="https://angularjs.org">AngularJS</a> - (
@@ -250,7 +253,7 @@
                         <a target="_blank" href="https://app.vsaex.visualstudio.com/profile/view?mkt=en-us">Visual Studio Team Services</a>
                     </li>
                 </ul>
-                <h5 class="box">Learning</h5>
+                <h5>Learning</h5>
                 <ul>
                     <li>
                         <a target="_blank" href="https://www.codecademy.com">Code Academy</a>
@@ -279,6 +282,8 @@
         <div id="help">
             <h5>Extract MSI: msiexec /a PathToMSIFile /qb TARGETDIR=DirectoryToExtractTo</h5>
         </div>
+        <div id="colorPicker"></div>
+    </div>
 </body>
 
 </html>

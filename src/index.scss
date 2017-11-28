@@ -3,6 +3,8 @@ body {
     background-color: $body-background-color-main;
     color: $body-color-main;
     font-family: $body-font-family-main;
+    padding-bottom: $body-padding-bottom;
+    padding-top: $body-padding-top;
 }
 
 h1,
@@ -12,10 +14,6 @@ h4,
 h5,
 h6 {
     color: $body-color-header;
-}
-
-#bingSearchContainer {
-    padding-top: 15px;
 }
 
 #header {
@@ -32,4 +30,21 @@ h6 {
 
 .box {
     background-color: $body-background-color-transparent;
+}
+
+table.jPicker {
+    background-color: $body-background-color-main;
+    border: none;
+}
+
+div#colorPicker {
+    color: $body-color-jPicker;
+}
+
+td.Text>label {
+    color: $body-color-jPicker;
+}
+
+input {
+    color: $body-color-main;
 }

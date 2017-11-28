@@ -61,5 +61,10 @@ typings/
 # dotenv environment variables file
 .env
 
-
 # End of https://www.gitignore.io/api/node
+
+# jPicker
+jpicker-1.1.6
+
+Thumbs.db
+desktop.ini
