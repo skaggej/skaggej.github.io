@@ -11,4 +11,9 @@ $(document).ready(function () {
         }
     };
     $('#colorPicker').jPicker(jPickerSettings);
+    $('.accordion').accordion({
+        active: false,
+        collapsible: true,
+        heightStyle: content,
+    });
 });

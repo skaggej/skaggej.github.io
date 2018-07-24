@@ -5,8 +5,10 @@
     <link rel="stylesheet" href="dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="dist/css/font-awesome.min.css">
     <link rel="stylesheet" href="dist/css/jPicker-1.1.6.min.css">
+    <link rel="stylesheet" href="dist/js/jquery-ui-1.12.1.custom/jquery-ui.min.css">
     <link rel="stylesheet" href="dist/css/index.min.css">
     <script src="dist/js/jquery.min.js"></script>
+    <script src="dist/js/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
     <script src="dist/js/bootstrap.min.js"></script>
     <script src="dist/js/jpicker-1.1.6.min.js"></script>
     <script src="dist/js/init.js"></script>
@@ -77,8 +79,29 @@
             </div>
         </div>
         <div id="mainContent" class="row">
-            <div class="col-sm-3">
-                <h5>Catapult</h5>
+            <div class="accordion">
+                <h1>Azure</h1>
+                <ul>
+                    <li>
+                        <a target="_blank" href="https://azure.microsoft.com/en-us/documentation/articles/automation-dsc-overview/?WT.mc_id=azurebg_email_Trans_981_MOSP#what-is-azure-automation-dsc">Automation DSC Overview</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://azure.microsoft.com/en-us/azurecon/">AzureCon</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://github.com/Azure/azure-quickstart-templates">Azure Quickstart ARM Templates</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="http://azureplatform.azurewebsites.net/">Platform</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://portal.azure.com">Portal</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://resources.azure.com/">Resource Explorer</a>
+                    </li>
+                </ul>
+                <h1>Catapult</h1>
                 <ul>
                     <li>
                         <a target="_blank" href="http://blogs.catapultsystems.com/wp-admin">Blog Login</a>
@@ -102,17 +125,7 @@
                         <a target="_blank" href="https://www.yammer.com/catapultsystems.com">Yammer</a>
                     </li>
                 </ul>
-                <h5>To-do</h5>
-                <ul>
-                    <li>Azure certs</li>
-                    <li>
-                        <a target="_blank" href="https://www.wunderlist.com/webapp#/lists/327108132">Books</a>
-                        </h5>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-sm-3">
-                <h5>Personal</h5>
+                <h1>Personal</h1>
                 <ul>
                     <li>
                         <a target="_blank" href="http://feedly.com/i/my">Feedly</a>
@@ -121,30 +134,15 @@
                         <a target="_blank" href="https://meetings.webex.com">WebEx</a>
                     </li>
                 </ul>
-                <h5>Azure</h5>
+                <h1>To-do</h1>
                 <ul>
+                    <li>Azure certs</li>
                     <li>
-                        <a target="_blank" href="https://azure.microsoft.com/en-us/documentation/articles/automation-dsc-overview/?WT.mc_id=azurebg_email_Trans_981_MOSP#what-is-azure-automation-dsc">Automation DSC Overview</a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="https://azure.microsoft.com/en-us/azurecon/">AzureCon</a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="https://github.com/Azure/azure-quickstart-templates">Azure Quickstart ARM Templates</a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="http://azureplatform.azurewebsites.net/">Platform</a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="https://portal.azure.com">Portal</a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="https://resources.azure.com/">Resource Explorer</a>
+                        <a target="_blank" href="https://www.wunderlist.com/webapp#/lists/327108132">Books</a>
+                        </h1>
                     </li>
                 </ul>
-            </div>
-            <div class="col-sm-3">
-                <h5>Office Dev</h5>
+                <h1>Office Dev</h1>
                 <ul>
                     <li>
                         <a target="_blank" href="http://docs.microsoft.com">docs.microsoft.com</a>
@@ -198,7 +196,7 @@
                         <a target="_blank" href="https://dev.office.com/sharepoint/docs/spfx/roadmap">SPFx Roadmap</a>
                     </li>
                 </ul>
-                <h5>#SharePoint</h5>
+                <h1>#SharePoint</h1>
                 <ul>
                     <li>
                         <a target="_blank" href="https://github.com/sharepoint">SharePoint Framework</a>
@@ -216,9 +214,7 @@
                         <a target="_blank" href="https://www.npmjs.com/package/@microsoft/generator-sharepoint">SPFx Yeoman generator</a>
                     </li>
                 </ul>
-            </div>
-            <div class="col-sm-3">
-                <h5>Dev</h5>
+                <h1>Dev</h1>
                 <ul>
                     <li>
                         <a target="_blank" href="https://angularjs.org">AngularJS</a> - (<a target="_blank" href="http://www.angularjsbook.com/angular-basics/chapters/">Angular Basics</a>)
@@ -248,7 +244,7 @@
                         <a target="_blank" href="https://app.vsaex.visualstudio.com/profile/view?mkt=en-us">Visual Studio Team Services</a>
                     </li>
                 </ul>
-                <h5>Learning</h5>
+                <h1>Learning</h1>
                 <ul>
                     <li>
                         <a target="_blank" href="https://www.codecademy.com">Code Academy</a>
@@ -278,12 +274,12 @@
                         <a target="_blank" href="https://microsoft.github.io/TypeSearch/">TypeScript TypeSearch</a>
                     </li>
                 </ul>
+                <h1>Useful Things</h1>
+                <p>Extract MSI: msiexec /a PathToMSIFile /qb TARGETDIR=DirectoryToExtractTo</p>
             </div>
+        </div>    
+        <div id="colorPicker">
         </div>
-        <div id="help">
-            <h5>Extract MSI: msiexec /a PathToMSIFile /qb TARGETDIR=DirectoryToExtractTo</h5>
-        </div>
-        <div id="colorPicker"></div>
     </div>
 </body>
 
