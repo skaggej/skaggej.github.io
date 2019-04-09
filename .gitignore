@@ -66,5 +66,7 @@ typings/
 # jPicker
 jpicker-1.1.6
 
+# Added
 Thumbs.db
 desktop.ini
+package-lock.json
